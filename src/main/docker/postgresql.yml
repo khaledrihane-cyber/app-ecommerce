@@ -1,0 +1,11 @@
+version: '2'
+services:
+  shop-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/shop/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=shop
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
